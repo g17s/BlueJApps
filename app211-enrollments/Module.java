@@ -37,7 +37,18 @@ public class Module
     public int getModuleCredit()
     {
         return moduleCredit;
-    } 
+    }
+
+    public void setModuleCredit(int moduleCredit){
+        this.moduleCredit = moduleCredit;
+    }
+
+    public void printModuleDetails(){
+        System.out.println("}=------------------={");
+        System.out.println(moduleCode + " " + moduleTitle);
+        System.out.println("Module credit: " + moduleCredit);
+        System.out.println("}=------------------={");
+    }
 
     /**
      * An example of a method - replace this comment with your own
