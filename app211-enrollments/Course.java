@@ -16,11 +16,6 @@ public class Course
     private String title;
 
     private Module module;
-    
-    private Module moduleTitle;
-    
-    private Module moduleCode;
-
     /**
      * Create a Course with a maximum number of enrolments. 
      * All other details are set to unkown values.
@@ -47,7 +42,7 @@ public class Course
     /**
      * Print out the details of the course to the terminal.
      */
-    private void printHeading()
+    public void printHeading()
     {
         System.out.println(" --------------------------------");
         System.out.println("   App211: Course Details");
@@ -55,10 +50,8 @@ public class Course
         System.out.println();
     }
 
-    private void addModule()
+    public void addModule()
     {
         this.module = module;
-        this.moduleTitle = moduleTitle;
-        this.moduleCode = moduleCode;
     }
 }
