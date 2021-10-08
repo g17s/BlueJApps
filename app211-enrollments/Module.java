@@ -7,39 +7,53 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    // sets a variable called moduleCode
     private String moduleCode;
-
+    // sets a variable called moduleTitle
     private String moduleTitle;
-
+    // sets a variable called moduleCredit
     private int moduleCredit;
     /**
      * Constructor for objects of class Module
      */
-    public Module()
+    public Module(String moduleCode,String moduleTitle)
     {
-        // initialise instance variables
-
+        this.moduleCode = moduleCode;
+        this.moduleTitle = moduleTitle;
+        moduleCredit = 0;
     }
 
+    /**
+     * Gets the value of moduleCode
+     */
     public String getModuleCode()
     {
-        return moduleCode;
+        return this.moduleCode;
     }
 
+    /**
+     * Gets the value of moduleTitle
+     */
     public String getModuleTitle()
     {
-        return  moduleTitle;
+        return  this.moduleTitle;
+        
     }
 
+    /**
+     * Gets the value of moduleCredit
+     */
     public int getModuleCredit()
     {
-        return moduleCredit;
+        return this.moduleCredit;
     }
 
-    public void setModuleCredit(int moduleCredit){
+    /**
+     * 
+     */
+    public void setModuleCredit(int moduleCredit)
+    {
+
         this.moduleCredit = moduleCredit;
     }
 
@@ -48,17 +62,5 @@ public class Module
         System.out.println(moduleCode + " " + moduleTitle);
         System.out.println("Module credit: " + moduleCredit);
         System.out.println("}=------------------={");
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
     }
 }

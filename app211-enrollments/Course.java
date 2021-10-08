@@ -14,7 +14,13 @@ public class Course
     private String code;
     // The full title including qualification and subject
     private String title;
+
+    private Module module;
     
+    private Module moduleTitle;
+    
+    private Module moduleCode;
+
     /**
      * Create a Course with a maximum number of enrolments. 
      * All other details are set to unkown values.
@@ -25,19 +31,19 @@ public class Course
         this.title = title;
     }
 
-    
     /**
      * Print the details of the course, the list
      * of students enrolled and the module
      */
-    public void print()
+    public void printTitle(String moduleTitle, String moduleCode)
     {
-        printHeading();
-        
-        System.out.println(" Course Code: " + code + ": " + title);
+        //printHeading();
+
+        System.out.println("Course: " + code + ": " + title);
+        System.out.println("Module: " + module.getModuleCode() + " " + module.getModuleTitle());
         System.out.println();
     }
-    
+
     /**
      * Print out the details of the course to the terminal.
      */
@@ -47,5 +53,12 @@ public class Course
         System.out.println("   App211: Course Details");
         System.out.println(" --------------------------------");
         System.out.println();
+    }
+
+    private void addModule()
+    {
+        this.module = module;
+        this.moduleTitle = moduleTitle;
+        this.moduleCode = moduleCode;
     }
 }
