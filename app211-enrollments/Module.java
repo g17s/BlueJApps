@@ -49,15 +49,16 @@ public class Module
     }
 
     /**
-     * 
+     * Gets the module credit
      */
     public void setModuleCredit(int moduleCredit)
     {
-
         this.moduleCredit = moduleCredit;
     }
 
-    public void printModuleDetails(){
+    /**
+     * Prints the module deatils such as module code and credits
+     */ public void printModuleDetails(){
         System.out.println("}=------------------={");
         System.out.println(moduleCode + " " + moduleTitle);
         System.out.println("Module credit: " + moduleCredit);

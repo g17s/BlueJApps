@@ -26,7 +26,7 @@ public class Student
     }
 
     /**
-     * Return the full name of this student.
+     * Gets the students name
      */
     public String getName()
     {
@@ -34,28 +34,26 @@ public class Student
     }
 
      /**
-     * Return the student ID of this student.
+     * Gets the students ID
      */
     public int getID()
     {
         return id;
     }
 
+    /**
+     * Enrols a student on a course
+       */
     public void enrol(Course course)
     {
         this.course = course;
     }
     
     /**
-     * Print the student's name and ID number to the output terminal.
+     * Print the student's name and ID number to the output terminal
      */
-    public void print()
+    public void printStudentDetails()
     {
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
-    
-    //public void printCourse()
-    //{
-    //    course.print();
-    //}
 }
