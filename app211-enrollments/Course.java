@@ -30,13 +30,14 @@ public class Course
      * Print the details of the course, the list
      * of students enrolled and the module
      */
-    public void printTitle(String moduleTitle, String moduleCode)
+    public void print()
     {
-        //printHeading();
+        printHeading();
 
         System.out.println("Course: " + code + ": " + title);
-        System.out.println("Module: " + module.getModuleCode() + " " + module.getModuleTitle());
         System.out.println();
+        module.printModuleDetails();
+        
     }
 
     /**
@@ -50,7 +51,7 @@ public class Course
         System.out.println();
     }
 
-    public void addModule()
+    public void addModule(Module module)
     {
         this.module = module;
     }
