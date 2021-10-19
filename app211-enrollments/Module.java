@@ -20,6 +20,7 @@ public class Module
     {
         this.moduleCode = moduleCode;
         this.moduleTitle = moduleTitle;
+
         moduleCredit = 0;
     }
 
@@ -37,7 +38,6 @@ public class Module
     public String getModuleTitle()
     {
         return  this.moduleTitle;
-        
     }
 
     /**
@@ -58,7 +58,8 @@ public class Module
 
     /**
      * Prints the module deatils such as module code and credits
-     */ public void printModuleDetails(){
+     */ public void printModuleDetails()
+    {
         System.out.println("}=------------------={");
         System.out.println(moduleCode + " " + moduleTitle);
         System.out.println("Module credit: " + moduleCredit);
