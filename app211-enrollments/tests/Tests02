@@ -1,0 +1,33 @@
+Course computing = new Course("BT1CTG1", "BSc Computing");
+Module Module = new Module("CO452", "Programming Concepts");
+Module.printModuleDetails();
+}=------------------={
+CO452 Programming Concepts
+Module credit: 0
+}=------------------={
+Module.setModuleCredit(15);
+Module.printModuleDetails();
+}=------------------={
+CO452 Programming Concepts
+Module credit: 15
+}=------------------={
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+Course: BT1CTG1: BSc Computing
+
+    Exception occurred.
+computing.addModule(Module);
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+Course: BT1CTG1: BSc Computing
+
+}=------------------={
+CO452 Programming Concepts
+Module credit: 15
+}=------------------={
