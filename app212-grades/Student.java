@@ -67,7 +67,15 @@ public class Student
      */
     public void awardTestMarks()
     {
-
+        int defaultMark = 80;
+        for(Module module: course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(defaultMark);
+        
+            
+            marks.add(mark);
+        }
     }
 
     /**
@@ -105,6 +113,7 @@ public class Student
     {
         for(ModuleMark mark: marks){
             mark.print();
+            System.out.println("\t" + course.convertToGrade(mark.getValue()));
         }
     }
 

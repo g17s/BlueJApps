@@ -43,7 +43,14 @@ public class Course
      */
     public void createModules()
     {
-
+        Module co452 = new Module ("CO452", "Programming Concepts");
+        Module co456 = new Module ("CO456", "Website Development");
+        Module co458 = new Module ("CO452", "Computer Archetectures");
+        Module wbl = new Module ("WBL", "Work Based Learning");
+        addModule(co452);
+        addModule(co456);
+        addModule(co458);
+        addModule(wbl);
     }
 
     public void addModule(Module module)
@@ -64,12 +71,13 @@ public class Course
         else if(mark >= 40 && mark <=49)
             return Grades.D;
         else if(mark >= 50 && mark <=59)
-            return Grades.D;
+            return Grades.C;
         else if(mark >= 60 && mark <=69)
-            return Grades.;
+            return Grades.B;
         else if(mark >= 70)
             return Grades.A;
-        return Grades.NS;
+        else
+            return Grades.NS;
     }
 
     /**
@@ -86,7 +94,8 @@ public class Course
         }
 
         finalMark = total / MAXN_MODULES;
-        return Grades.NS;
+        finalGrade = convertToGrade(finalMark);
+        return finalGrade;
     }
 
     /**
