@@ -1,0 +1,33 @@
+Student Student = new Student("George Smith", 22102202);
+Student.print();
+ Student ID: 22102202, George Smith
+Course Course = new Course("DTS", "Digital Technology Solutions");
+Student.enrol(Course);
+Student.printCourse();
+ Student ID: 22102202, George Smith
+
+ Course DTS: Digital Technology Solutions
+Module Module1 = new Module("CO452", "Programming Concepts");
+Course.addModule(Module1);
+ModuleMark GeorgeCO452Mark = new ModuleMark(Module1);
+GeorgeCO452Mark.setMark(80);
+Student.addMark(GeorgeCO452Mark);
+Student.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22102202, George Smith
+
+ Course DTS: Digital Technology Solutions
+
+ CO452: 	Programming Concepts	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	80	A
+
+
+ Final Course Grade = F
