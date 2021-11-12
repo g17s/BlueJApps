@@ -1,0 +1,23 @@
+Product product2 = new Product(111, "Sims");
+product2.print();
+ ID 111: Sims stock level: 0
+product2.decreaseQuantity(10);
+product2.print();
+ ID 111: Sims stock level: 0
+product2.print();
+ ID 111: Sims stock level: 0
+product2.increaseQuantity(10);
+product2.print();
+ ID 111: Sims stock level: 10
+Product product3 = new Product(112, "Rainbow Six Siege");
+StockList stockLis1 = new StockList();
+stockLis1.add(product2);
+stockLis1.add(product3);
+stockLis1.print();
+
+ Peacock's Stock List
+ ====================
+
+ ID 111: Sims stock level: 10
+ ID 112: Rainbow Six Siege stock level: 0
+

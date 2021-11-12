@@ -23,9 +23,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Grand Theft Auto V"));
+        stock.add(new Product(102, "Rainbow Six Siege"));
+        stock.add(new Product(103, "Rocket League"));
+        stock.add(new Product(104, "Minecraft"));
+        stock.add(new Product(105, "Detroit: Become Human"));
+        stock.add(new Product(106, "Sea Of Theifs"));
+        stock.add(new Product(107, "CS:GO"));
+        stock.add(new Product(108, "Forza Horizon 5"));
+        stock.add(new Product(109, "ARK : Survival Evolved"));
+        stock.add(new Product(110, "Cyberpunk 2077"));
     }
     
     /**
