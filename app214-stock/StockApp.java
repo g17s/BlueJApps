@@ -74,6 +74,19 @@ public class StockApp
         stock.add(product);
         stock.print();
     }
+    private void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+        System.out.println("Removing a product");
+        System.out.println();
+        
+        stock.print();
+        
+        int id = reader.getInt("Please enter a product ID: ");
+        
+        stock.remove(id);
+        stock.print();
+    }
     /**
      * Print out a menu of operation choices
      */
