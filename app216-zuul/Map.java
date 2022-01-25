@@ -15,7 +15,7 @@ public class Map
 {
     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location reception, corridoor1, corridoor2, cafe, dressing_room, shop, ball_section, pitch;
 
     private Location currentLocation;
 
@@ -35,69 +35,120 @@ public class Map
      */
     private void createLocations()
     {
-        createOutside();
-        createTheatre();
-        createPub();
-        createOffice();
-        createLab();
+        createReception();
+        createCorridoor1();
+        createCorridoor2();
+        createCafe();
+        createDressingRoom();
+        createShop();
+        createBallSection();
+        createPitch();
 
-        currentLocation = outside;  // start game outside
+        currentLocation = reception;  // start game outside
     }
     
     /**
      * Create the outside and link it to the
      * theatre, lab and pub
      */
-    private void createOutside()
+    private void createReception()
     {
-        outside = new Location("outside the main entrance of the university");
+        reception = new Location("In the reception of the sports center");
         
     }
     
     /**
      * Create the pub and link it to the outside
      */
-    private void createPub()
+    private void createCorridoor1()
     {
-        pub = new Location("in the campus pub");
+        corridoor1 = new Location("in corridoor 1");
         
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        corridoor1.setExit("west", reception);
+        reception.setExit("east", corridoor1);
+        
+        corridoor1.setExit("north", cafe);
+        cafe.setExit("south", corridoor1);
+        
+        corridoor1.setExit("south", dressing_room);
+        dressing_room.setExit("north", corridoor1);
+        
+        corridoor1.setExit("east", corridoor2);
+        corridoor2.setExit("west", corridoor1);
+        
     }
     
     /**
      * Create the theatre linked to the outside
      */
-    private void createTheatre()
+    private void createCorridoor2()
     {
-        theater = new Location("in a lecture theater");
+        corridoor2 = new Location("in corridoor 2");
         
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        corridoor2.setExit("east", corridoor1);
+        corridoor1.setExit("west", corridoor2);
+        
+        corridoor2.setExit("north", shop);
+        shop.setExit("south", corridoor2);
     }
     
     /**
      * Create the office linked to the lab
      */
-    private void createOffice()
+    private void createCafe()    
     {
-        office = new Location("in the computing admin office");
+        cafe = new Location("in the computing admin office");
         
+        cafe.setExit("south", corridoor1);
+        corridoor1.setExit("south", cafe);
     }
     
     /**
      * Create the lab and link it to the outside and office
      */
-    private void createLab()
+    private void createDressingRoom()
     {
         // create the Locations
-        lab = new Location("in a computing lab");
+        dressing_room = new Location("in a computing lab");
         
-        lab.setExit("east", office);
-        office.setExit("west", lab);
+        dressing_room.setExit("north", corridoor1);
+        corridoor1.setExit("south", dressing_room);
+    }
+    
+    /**
+     * Create the office linked to the lab
+     */
+    private void createPitch()    
+    {
+        pitch = new Location("in the computing admin office");
         
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        pitch.setExit("west", corridoor2);
+        corridoor2.setExit("east", pitch);
+    }
+    
+    /**
+     * Create the office linked to the lab
+     */
+    private void createShop()    
+    {
+        shop = new Location("in the computing admin office");
+        
+        shop.setExit("south", corridoor2);
+        corridoor2.setExit("north", shop);
+        
+        shop.setExit("east", ball_section);
+        ball_section.setExit("west", shop);
+    }
+    
+    /**
+     * Create the office linked to the lab
+     */
+    private void createBallSection()    
+    {
+        ball_section = new Location("in the computing admin office");
+        
+        ball_section.setExit("west", shop);
+        shop.setExit("east", ball_section);
     }
     
     public Location getCurrentLocation()
