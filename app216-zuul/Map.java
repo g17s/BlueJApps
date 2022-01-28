@@ -55,6 +55,9 @@ public class Map
     {
         reception = new Location("In the reception of the sports center");
         
+        corridoor1.setExit("west", reception);
+        reception.setExit("east", corridoor1);
+        
     }
     
     /**
