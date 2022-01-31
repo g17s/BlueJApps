@@ -74,7 +74,7 @@ public class StockApp
         stock.add(product);
         stock.print();
     }
-    private void removeProduct(int id)
+    /**private void removeProduct(int id)
     {
         Product product = findProduct(id);
         System.out.println("Removing a product");
@@ -87,6 +87,7 @@ public class StockApp
         stock.remove(id);
         stock.print();
     }
+    */
     /**
      * Print out a menu of operation choices
      */

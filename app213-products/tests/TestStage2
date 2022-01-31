@@ -1,0 +1,69 @@
+stockDem1.runDemo();
+
+ George's Stock List
+ ====================
+
+ ID 101: Grand Theft Auto V stock level: 0
+ ID 102: Rainbow Six Siege stock level: 0
+ ID 103: Rocket League stock level: 0
+ ID 104: Minecraft stock level: 0
+ ID 105: Detroit: Become Human stock level: 0
+ ID 106: Sea Of Theifs stock level: 0
+ ID 107: CS:GO stock level: 0
+ ID 108: Forza Horizon 5 stock level: 0
+ ID 109: ARK : Survival Evolved stock level: 0
+ ID 110: Cyberpunk 2077 stock level: 0
+
+
+ George's Stock List
+ ====================
+
+ ID 101: Grand Theft Auto V stock level: 0
+ ID 102: Rainbow Six Siege stock level: 0
+ ID 103: Rocket League stock level: 0
+ ID 104: Minecraft stock level: 0
+ ID 105: Detroit: Become Human stock level: 0
+ ID 106: Sea Of Theifs stock level: 0
+ ID 107: CS:GO stock level: 0
+ ID 108: Forza Horizon 5 stock level: 0
+ ID 109: ARK : Survival Evolved stock level: 0
+ ID 110: Cyberpunk 2077 stock level: 0
+
+
+ George's Stock List
+ ====================
+
+ ID 101: Grand Theft Auto V stock level: 0
+ ID 102: Rainbow Six Siege stock level: 0
+ ID 103: Rocket League stock level: 0
+ ID 104: Minecraft stock level: 0
+ ID 105: Detroit: Become Human stock level: 0
+ ID 106: Sea Of Theifs stock level: 0
+ ID 107: CS:GO stock level: 0
+ ID 108: Forza Horizon 5 stock level: 0
+ ID 109: ARK : Survival Evolved stock level: 0
+ ID 110: Cyberpunk 2077 stock level: 0
+
+stockApp1.run();
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > 
